@@ -11,24 +11,24 @@ import romanceBooks from "../data/romance.json";
 import scifiBooks from "../data/scifi.json";
 import Card from "react-bootstrap/Card";
 
-let allCategoryBooks = fantasyBooks.concat(historyBooks.concat(horrorBooks.concat(romanceBooks.concat(scifiBooks))));
-console.log(allCategoryBooks);
+//let allCategoryBooks = fantasyBooks.concat(historyBooks.concat(horrorBooks.concat(romanceBooks.concat(scifiBooks))));
+//console.log(allCategoryBooks);
 
 class AllTheBooks extends Component {
   render() {
     return (
       <Container>
         <Row className="justify-content-center mt-3">
-          {scifiBooks.map((book) => {
+          {scifiBooks.map((book, i) => {
             return (
-              <Col xs={6} md={4} lg={3} key={book.asin}>
+              <Col xs={6} md={4} lg={3} key={book.asin + i}>
                 <Card>
                   <Card.Img variant="top" src={book.img} />
                   <Card.Body>
                     <Card.Title>{book.title}</Card.Title>
                     <Card.Text>
                       Category: {book.category} <br />
-                      Price: {book.price}
+                      Price: {book.price} €
                       <br />
                       Asin: {book.asin}
                       <br />
