@@ -21,8 +21,8 @@ class AllTheBooks extends Component {
         <Row className="justify-content-center mt-3">
           {scifiBooks.map((book) => {
             return (
-              <Col xs={6} md={4} lg={3}>
-                <Card key={book.asin}>
+              <Col xs={6} md={4} lg={3} key={book.asin}>
+                <Card>
                   <Card.Img variant="top" src={book.img} />
                   <Card.Body>
                     <Card.Title>{book.title}</Card.Title>

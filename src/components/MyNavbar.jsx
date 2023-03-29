@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 function MyNavbar() {
   return (
     <Navbar bg="light" expand="lg">
-      <Container>
+      <Container fluid>
         <Navbar.Brand href="#home">
           <img
             className="navLogo"
