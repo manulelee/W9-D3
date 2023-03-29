@@ -9,8 +9,11 @@ import AllTheBooks from "./components/AllTheBooks";
 function App() {
   return (
     <>
-      <MyNavbar></MyNavbar>
+      <span className="sticky-top">
+        <MyNavbar></MyNavbar>
+      </span>
       <JumbotronComponent></JumbotronComponent>
+
       <AllTheBooks></AllTheBooks>
       <MyFooter></MyFooter>
     </>
