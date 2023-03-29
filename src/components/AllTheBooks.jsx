@@ -11,8 +11,8 @@ import romanceBooks from "../data/romance.json";
 import scifiBooks from "../data/scifi.json";
 import Card from "react-bootstrap/Card";
 
-//let allCategoryBooks = fantasyBooks.concat(historyBooks.concat(horrorBooks.concat(romanceBooks.concat(scifiBooks))));
-//console.log(allCategoryBooks);
+let allCategoryBooks = fantasyBooks.concat(historyBooks.concat(horrorBooks.concat(romanceBooks.concat(scifiBooks))));
+console.log(allCategoryBooks);
 
 class AllTheBooks extends Component {
   render() {
