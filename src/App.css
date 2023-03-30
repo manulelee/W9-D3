@@ -29,3 +29,7 @@ div.card button {
 body {
   background-color: black;
 }
+
+.selectedElement {
+  border: 2px solid red !important;
+}
